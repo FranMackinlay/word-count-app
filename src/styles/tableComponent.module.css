@@ -1,0 +1,4 @@
+.tableComponent {
+  overflow: auto;
+  max-height: 100%;
+}

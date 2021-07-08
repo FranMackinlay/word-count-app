@@ -5,8 +5,8 @@ import WordCountComponent from './components/WordCountComponent';
 function App() {
   return (
     <div className="App">
-      <header>
-        <h1>
+      <header className="my-5">
+        <h1 className="py-3">
           Word Count App
         </h1>
       </header>

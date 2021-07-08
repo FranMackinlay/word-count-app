@@ -5,7 +5,7 @@ import styles from '../styles/tableComponent.module.css';
 
 const TableComponent = ({ wordsListCount, sortData }: any) => {
 
-  const [orderByArray, setOrderByArray] = useState<ByOrder[]>([{ by: 'id', order: 'asc' }, { by: 'word', order: 'asc' }, { by: 'count', order: 'asc' }]);
+  const [orderByArray, setOrderByArray] = useState<ByOrder[]>([{ by: 'id', order: 'desc' }, { by: 'word', order: 'desc' }, { by: 'count', order: 'desc' }]);
   const [orderByArrayTmp, setOrderByArrayTmp] = useState<ByOrder[]>([]);
 
   const sortDataBy = (orderByTmp: ByOrder): void => {
@@ -17,7 +17,7 @@ const TableComponent = ({ wordsListCount, sortData }: any) => {
 
     let orderByArrayTmp = orderByArray.map(item => {
       if (item.by === by) {
-        item.order = item.order === 'asc' ? 'desc' : 'asc';
+        item.order = item.order === 'desc' ? 'asc' : 'desc';
       }
       return item;
     });

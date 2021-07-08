@@ -49,8 +49,7 @@ export default function WordCountComponent() {
 
   return (
     <div className={`${styles.wordCountComponent} d-flex col-md-10 offset-1 justify-content-evenly mt-5`}>
-      <div className="text-area-container col-md-4">
-        <label htmlFor="floatingTextarea">Type here</label>
+      <div className="text-area-container col-md-5">
         <textarea rows={Math.round(wordsList.length / 8)} className="form-control" id="floatingTextarea" onChange={onUserInput}></textarea>
       </div>
       <div className="words-table col-md-6">

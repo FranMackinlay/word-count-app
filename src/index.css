@@ -17,3 +17,7 @@ code {
 table {
   color: whitesmoke !important;
 }
+
+textarea {
+  height: 100%;
+}

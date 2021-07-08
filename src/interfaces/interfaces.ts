@@ -1,4 +1,8 @@
 export default interface WordListCount {
-  word: string
-  count: number
+  [index: string]: string | number
+}
+
+export interface ByOrder {
+  by: string
+  order: string
 }
